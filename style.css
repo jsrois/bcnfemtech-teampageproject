@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: graphik, courier;
+    background-color: #eeebdd;
+}
+
+header {
+    background-color: #ce1212;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+header .logo {
+    height: 40px;
+    padding: 10px;
+}
+
+header .logo img {
+    height: 100%;
+}
+
+header .menu {
+    display: flex;
+    align-items: stretch;
+    padding-right: 20px;
+}
+
+header .menu a {
+    padding: 20px 10px;
+    text-decoration: none;
+    color: #eeebdd;
+
+}
+
+header .menu a.active {
+    background-color: #810000;
+}
+
+.introduction {
+    padding: 80px 40px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.member-profile {
+    margin: 30px;
+    display:flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.member-profile .name {
+    font-weight: bold;
+}
+
+.member-profile .title {
+    margin-top: 0;
+}
+
+.member-profile:hover .portrait {
+    box-shadow: 2px 2px 2px 1px #ce121299;
+    transform: translate(-2px, -2px);
+}
+
+.portrait {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    border: 1px solid grey;
+    overflow: hidden;
+}
+
+
+.portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
